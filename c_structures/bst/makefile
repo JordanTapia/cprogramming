@@ -1,6 +1,6 @@
-tree : main.o bst.o 
+tree : main.o bst.o parser.o
 
-	gcc -v -Wall -o tree main.o bst.o
+	gcc -v -Wall -o tree main.o bst.o parser.o
 
 clean :
 
