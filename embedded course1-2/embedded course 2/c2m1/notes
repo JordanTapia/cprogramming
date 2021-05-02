@@ -1,0 +1,46 @@
+Course: Embedded SW and HW Architecture
+Video: 2
+Title: Word Size and Data Types
+
+Writing portable code by considering word size, i.e. 32/64 b arch
+
+ Thumb-2 16b architecture on ARMv6-M
+
+ stdint.h: uint16_t, int32_t
+
+ 	typdef (un)signed short int uint16_t  
+ 	typdef enum
+ 	typedef struct 	
+
+
+READ MODIFY WRITE = OVERHEAD
+
+ bad for  BIT MANIPULATION
+ *ptr |= 0x10;
+ *ptr &=~(0x10);
+
+ arm provides bit banded region
+
+ AMBA HPB
+ Advanced Microcontroller Bus Architecture High Performance Bus 
+
+
+2 AHB's below:
+
+ AHB System Bus:
+ SRAM
+ High speed peripheals
+ bridge->periphs
+
+ AHB (i and d) Flash
+ AHB Flash I-code Bus - instruction in parallel with data
+
+ AHB<->Bridge<->APB to the low BW periphs
+
+
+ packed vs. aligned memory:
+ packed is memory effc
+ packed is unagligned and requires extrap processing to get tshit together: exampel a load instruction 
+
+ aligned is the other fast
+
